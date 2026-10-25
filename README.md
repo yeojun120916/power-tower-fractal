@@ -2,43 +2,58 @@
 power tower fractal explorer
 
 
-# Power Tower Fractal Explorer
 
-An interactive black-and-white fractal explorer written in Python.
+# 파워 타워 프랙탈 탐험기
 
-## Features
+파이썬으로 제작한 대화형 흑백 프랙탈 탐험 프로그램입니다. 화면을 확대하고 축소하면서 복잡하고 아름다운 프랙탈의 구조를 탐험할 수 있습니다.
 
-- Interactive zooming and navigation
-- Automatic high-resolution refinement
-- Export fractal images as PNG
-- CPU acceleration using Numba
+## 주요 기능
 
-## Requirements
+- 마우스를 이용한 프랙탈 확대 및 축소
+- 마우스로 영역을 선택하여 원하는 부분 확대
+- 확대 및 축소 후 자동으로 고화질 재계산
+- 프랙탈 이미지를 PNG 파일로 저장
+- Numba를 이용한 CPU 계산 가속
+- 흑백으로 표현되는 프랙탈의 복잡한 구조 관찰
 
-- Python 3.10 or newer
+## 실행 환경
+
+- Python 3.10 이상 권장
 - NumPy
 - Matplotlib
 - Numba
 
-## Installation
+## 설치 방법
 
-Install the required packages:
+명령 프롬프트 또는 터미널에서 다음 명령어를 실행합니다.
 
 ```bash
 pip install numpy matplotlib numba
 ```
 
-## Run
+## 실행 방법
+
+`powertower.py` 파일이 있는 폴더에서 다음 명령어를 실행합니다.
 
 ```bash
 python powertower.py
 ```
 
-## Controls
+## 조작 방법
 
-- Mouse wheel: Zoom
-- Mouse drag: Select a region to zoom
-- Right-click: Copy coordinates
-- S: Save image
-- R: Reset view
-- Q or Esc: Exit
+| 조작 | 기능 |
+|---|---|
+| 마우스 휠 | 화면 확대 및 축소 |
+| 마우스 드래그 | 선택한 영역 확대 |
+| 마우스 오른쪽 클릭 | 좌표 복사 |
+| S 키 | 이미지 저장 |
+| R 키 | 처음 화면으로 초기화 |
+| Q 또는 Esc 키 | 프로그램 종료 |
+
+## 제작 목적
+
+프랙탈의 자기유사성과 복잡한 수학적 구조를 직접 탐구하고, 반복 계산을 통해 생성되는 아름다운 패턴을 관찰하기 위해 제작했습니다.
+
+## 참고 사항
+
+컴퓨터 성능과 설정에 따라 계산 속도가 달라질 수 있습니다. 반복 횟수와 이미지 해상도를 높이면 더 세밀한 구조를 관찰할 수 있지만, 계산 시간이 길어질 수 있습니다.
